@@ -1,0 +1,199 @@
+
+
+.banner {
+  padding: 34px 0 0;
+  h2 {
+    font-size: 27px;
+    color: $brand-blue;
+  }
+  p {
+    font-size: 15px;
+    color: #75777a;
+  }
+
+  .nav{
+    .nav-link{
+      color: $dark-blue;
+      font-size: 15px;
+      padding-bottom: 15px;
+
+      &.active,
+      &:hover,
+      &:focus{
+        color: $brand-blue;
+        border-bottom: 3px solid $brand-blue;
+      }
+    }
+  }
+}
+
+.white-box{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 23px;
+}
+
+.cc-body {
+  background-color: #eff2f3;
+  padding: 45px 0;
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .quote-sections {
+    margin-bottom: 50px;
+    ul {
+      padding-left: 22px;
+      margin: 0;
+      li {
+        font-size: 16px;
+        font-weight: 400;
+        color: $brand-blue;
+        + li{
+          margin-top: 15px;
+        }
+      }
+    }
+
+  }
+  .custom-checkbox {
+    h4 {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+    ._right label {
+      margin-left: 10px;
+      color: #7d7f82;
+      font-weight: 400;
+      font-size: 15px;
+      &:before{
+        border-radius: 0;
+        border: 2px solid rgba(117, 119, 122, 0.8);
+        width: 17px;
+        height: 17px;
+      }
+    }
+    .custom-control-input:checked~.custom-control-label::before{
+      border: 2px solid $brand-blue;
+      background-color: transparent;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 14px 18px;
+        background: rgba(255,255,255,0.5);
+        border-radius: 5px;
+        + li{
+          margin-top: 10px;
+        }
+        label {
+          color: $dark-blue;
+          text-transform: capitalize;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  label, p {
+    color: #2f353f;
+    font-size: 15px;
+    font-weight: 500;
+    a {
+      color: #0098d6;
+      text-decoration: none;
+    }
+  }
+  .d-flex select.form-control {
+    width: 15%;
+    padding: 0;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: -6px;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #999595;
+    border-radius: 0;
+    margin-bottom: 15px;
+  }
+  .info-section {
+    background-color: #fff;
+    padding: 33px 0;
+    margin: 35px 0;
+    .info-box {
+      padding-left: 30px;
+      border-left: 1px solid #d0d4d5;
+      i {
+        display: flex;
+        font-size: 26px;
+        margin-right: 10px;
+        color: #0098d6;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      P {
+        font-size: 16px;
+        color: $dark-blue;
+        margin: 0;
+      }
+    }
+    .left-border-none {
+      border-left: none;
+      padding-left: 15px;
+    }
+  }
+  .delivery-email {
+    label {
+      font-weight: 600;
+      color: #222a32;
+      font-size: 18px;
+    }
+    input.form-control {
+      width: 52%;
+      padding: 0;
+      padding-left: 5px;
+      font-size: 16px;
+      color: #8a8b8c;
+      margin-top: -6px;
+      font-weight: 500;
+      border: none;
+      background: transparent;
+      border-bottom: 2px solid #999595;
+      border-radius: 0;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #8a8b8c;
+      font-size: 14.5px;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+}
+.cc-controls {
+  padding: 35px 0;
+  .left .btn-link, .right .btn-link {
+    text-decoration: underline;
+    color: #0098d6;
+    font-size: 15px;
+  }
+  .right {
+    margin-left: auto;
+    a {
+      margin-left: 55px;
+    }
+    .btn {
+      margin-left: 70px;
+    }
+  }
+
+}
+
+

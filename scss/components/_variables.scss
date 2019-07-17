@@ -2,7 +2,7 @@
 // GLOBAL VARIABLES
 /////////////////////////////////////////////////////////////////////////////
 
-$site-max-width: 1083px !default;
+$site-max-width: 1280px !default;
 $sm-em: 	"only screen and (min-width: 36em)";	// ≥ 576px
 $md-em: 	"only screen and (min-width: 48em)";	// ≥ 768px
 $lg-em: 	"only screen and (min-width: 62em) ";	// ≥ 992px
@@ -37,4 +37,5 @@ $font-weight-bold: bold !default;
 /////////////////////////////////////////////////////////////////////////////
 
 
-
+$brand-blue : #00529c;
+$dark-blue: #2e343d;
