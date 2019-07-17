@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Design</title>
+    <meta name="description" content=""/>
+    
+    <link rel="stylesheet" id="css-bootstrap" href="./css/lib/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="css-cores" href="./css/styles.css" media="all">
+</head>
+<body>
+<header>Header</header>
+<section class="banner">
+    <div class="container">
+        <h2>New Quote</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+        <nav class="nav">
+            <a class="nav-link" href="#">Group Info</a>
+            <a class="nav-link" href="#">Census</a>
+            <a class="nav-link active" href="#">Delivery</a>
+        </nav>
+    </div>
+</section>
+
+<section class="cc-body">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Initial Quote includes the following sections:</h4>
+            <div>
+                <ul>
+                    <li>Census</li>
+                    <li>Medical Budget / Defined Contribution</li>
+                    <li>Ancillary Rate Summaries</li>
+                    <li>Sample Employee Worksheet</li>
+                    <li>Sample Invoice</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Optional Selections for your Quote</h4>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Select All Optional Benefits</label>
+                <ul>
+                    <li>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Medical Benefit Summaries</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Ancillary Benefit Summaries (Dental, Vision, Chiro & Acupuncture)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Employee & Dependent Rates</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <label>You have multiple agencies. Please select the appropriate agency for your quote:</label>
+    <select name="" class="form-control">
+        <option value="asdf">Widget Inc.</option>
+        <option value="asdf">Widget Inc.</option>
+        <option value="asdf">Widget Inc.</option>
+    </select>
+    <p>Please review your information below. If any information has changed, email your changes to Finance Customer Service at <a href="#">commissions@calchoice.com</a> and your profile
+        will be updated. If you need further assistance, you may call the Finance Customer Service Team at (714)567-4390.</p>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="info-box">
+                <i class="fa fa-user"></i>
+                <h4>Broker Information</h4>
+                <p>Broker No. 80366 <br>
+                    Aaron Watts</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <i class="fa fa-map-marker"></i>
+                <h4>Contact Information</h4>
+                <p>Address: 721 S PARKER <br>
+                    city: ORANGE <br>
+                    State: CA ZIP: 92868 <br>
+                    Phone: (714) 567-4505 <br>
+                    Email: johnny@broker.com</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <i class="fa fa-user"></i>
+                <h4>Inside Sales Rep</h4>
+                <p>Don Hutchinson <br>
+                    Phone: (800) 542-4218 <br>
+                    Ext: 4431 <br>
+                    Email: insidesales@calchoice.com</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <i class="fa fa-user"></i>
+                <h4>Outside Sales Rep</h4>
+                <p>Johnny Appleseed <br>
+                    Phone: (800) 542-4218 <br>
+                    Ext: 4431 <br>
+                    Email: outsidesales@calchoice.com</p>
+            </div>
+        </div>
+    </div>
+    <label>Delivery Email:</label>
+    <input type="text" value="john.doe@gmail.com; jane.doe@hotmail.com" class="form-control">
+    <p>If this quote is being sent to multiple email addresses, separate each address with a semicolon(;)</p>
+</section>
+<section class="cc-controls">
+    <div class="left">
+        <a href="#">Cancel</a>
+    </div>
+    <div class="right">
+        <a href="#">Print & Preview</a>
+        <a href="#">Save & Exit</a>
+        <a href="#" class="btn btn-blue">Deliver Now</a>
+    </div>
+</section>
+
+<footer>Footer</footer>
+
+<!-- Javascript -->
+<script src="js/lib/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

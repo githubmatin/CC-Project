@@ -1,0 +1,118 @@
+////////////////////////////////////////////////////
+/*
+
+     @include grid-md {
+        min-height: 40vh;        
+    }    
+
+*/
+////////////////////////////////////////////////////
+
+
+@mixin grid-sm {
+  @media #{$sm-em} {
+    @content;
+  }
+}
+
+@mixin grid-md {
+  @media #{$md-em} {
+    @content;
+  }
+}
+
+@mixin grid-lg {
+  @media #{$lg-em} {
+    @content;
+  }
+}
+
+@mixin grid-xl {
+  @media #{$xl-em} {
+    @content;
+  }
+}
+
+@mixin grid-xs-only {
+  @media #{$xs-only} {
+    @content;
+  }
+}
+
+@mixin grid-sm-only {
+  @media #{$sm-only} {
+    @content;
+  }
+}
+
+@mixin grid-md-only {
+  @media #{$md-only} {
+    @content;
+  }
+}
+
+@mixin grid-lg-only {
+  @media #{$lg-only} {
+    @content;
+  }
+}
+
+@mixin grid-xl-only {
+  @media #{$xl-only} {
+    @content;
+  }
+}
+
+@mixin grid-sm-down {
+  @media #{$sm-down} {
+    @content;
+  }
+}
+
+@mixin grid-md-down {
+  @media #{$md-down} {
+    @content;
+  }
+}
+
+@mixin grid-lg-down {
+  @media #{$lg-down} {
+    @content;
+  }
+}
+
+@mixin kreeShadow {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+@mixin kreeTransition {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
