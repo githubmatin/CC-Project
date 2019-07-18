@@ -4,7 +4,7 @@
   padding: 34px 0 0;
   h2 {
     font-size: 27px;
-    color: $brand-blue;
+    color: #444;
   }
   p {
     font-size: 15px;
@@ -20,17 +20,15 @@
       &.active,
       &:hover,
       &:focus{
-        color: $brand-blue;
-        border-bottom: 3px solid $brand-blue;
+        color: #444;
+        border-bottom: 3px solid $broker-blue;
       }
     }
   }
 }
 
 .white-box{
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px 23px;
+  
 }
 
 .cc-body {
@@ -42,15 +40,18 @@
     margin-bottom: 20px;
   }
 
-  .quote-sections {
+  .quote-includes {
     margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 23px;
+
     ul {
       padding-left: 22px;
       margin: 0;
       li {
         font-size: 16px;
         font-weight: 400;
-        color: $brand-blue;
         + li{
           margin-top: 15px;
         }
@@ -58,7 +59,7 @@
     }
 
   }
-  .custom-checkbox {
+  .quote-optional {
     h4 {
       font-size: 19px;
       margin-bottom: 20px;
@@ -68,17 +69,8 @@
       color: #7d7f82;
       font-weight: 400;
       font-size: 15px;
-      &:before{
-        border-radius: 0;
-        border: 2px solid rgba(117, 119, 122, 0.8);
-        width: 17px;
-        height: 17px;
-      }
     }
-    .custom-control-input:checked~.custom-control-label::before{
-      border: 2px solid $brand-blue;
-      background-color: transparent;
-    }
+
     ul {
       list-style: none;
       padding: 0;
@@ -87,6 +79,9 @@
         padding: 14px 18px;
         background: rgba(255,255,255,0.5);
         border-radius: 5px;
+        &.active {
+          background: rgba(255,255,255,1.0);
+        }
         + li{
           margin-top: 10px;
         }
@@ -102,7 +97,7 @@
   label, p {
     color: #2f353f;
     font-size: 15px;
-    font-weight: 500;
+    //font-weight: 500;
     a {
       color: #0098d6;
       text-decoration: none;
@@ -132,14 +127,14 @@
         display: flex;
         font-size: 26px;
         margin-right: 10px;
-        color: #0098d6;
+        color: $broker-blue;
       }
       h4 {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
       }
       P {
-        font-size: 16px;
+        font-size: 14px;
         color: $dark-blue;
         margin: 0;
       }
@@ -160,30 +155,36 @@
       padding: 0;
       padding-left: 5px;
       font-size: 16px;
-      color: #8a8b8c;
+      color: #444;
       margin-top: -6px;
       font-weight: 500;
       border: none;
       background: transparent;
       border-bottom: 2px solid #999595;
       border-radius: 0;
-      margin-bottom: 15px;
+      margin-bottom: 2px;
     }
     p {
-      color: #8a8b8c;
-      font-size: 14.5px;
+      color: #444;
+      font-size: 12px;
       font-style: italic;
-      font-weight: 500;
     }
   }
 }
 .cc-controls {
   padding: 35px 0;
-  .left .btn-link, .right .btn-link {
+
+  .btn-link {
     text-decoration: underline;
-    color: #0098d6;
-    font-size: 15px;
+    font-size: 14px;
+    color: $light-blue;
   }
+
+  .btn {
+    background-color: $broker-blue;
+    color: #fff;
+  }
+
   .right {
     margin-left: auto;
     a {

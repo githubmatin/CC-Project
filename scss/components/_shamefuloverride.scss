@@ -1,0 +1,16 @@
+.custom-control.custom-checkbox {
+	label {
+		&:before{
+		  border-radius: 0 !important;
+		  border: 2px solid rgba(117, 119, 122, 0.8);
+		  width: 17px;
+		  height: 17px;
+		}
+	}
+}
+
+
+.custom-control-input:checked~.custom-control-label::before {
+	background-color: $broker-blue;
+	border: 2px solid $broker-blue;
+}
